@@ -1,19 +1,166 @@
-
-body {
+body{
     text-align: center;
+    background-color: rgb(105, 95, 241);
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(10, 255, 255);
-    overflow: hidden;
-    background-color: #000a5f;
-    user-select: none;
-    -webkit-user-scelect: none;
+    color:rgb(10, 255, 255)
 }
-a{
-    color: rgb(73, 114, 12)
+
+article{
+    width: 300px;
+    margin: auto;
+    text-align: left;
 }
-a :hover{
- color:rgb(0, 247, 255)
+h1{
+    color: black;
+    font-family: Cambria;
+    animation-name:Farbwechsel ;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
-img{
-    width: 200px
+h1{
+    color: black;
+    font-family:sans-serif;
+    animation-name:Farbwechsel ;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+h3{
+    background-color: crimson;
+    text-size-adjust: 400px;
+}
+div h3{
+    background-color: aqua;
+    text-size-adjust: 400px;
+}
+article h4{
+    width: 500px;
+}
+em {
+    font-style: normal;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 14px;
+}
+
+p.special {
+    font-weight: bold;
+    color: black;
+}
+
+a:hover{
+    background: rgb(56, 2, 253);
+    color: aqua;
+}
+span div img{
+    width: 40px
+}
+span div a{
+    background: black;
+    color: aqua;
+}
+span div a :hover{
+    background: aqua;
+    color: black;
+}
+a img{
+    width: 75px
+}
+div h3 a:hover  {
+background: rgb(34, 156, 255);
+color: rgb(255, 255, 255);
+}
+span h3 a:hover  {
+background: rgb(128, 41, 41);
+color: rgb(255, 255, 255);
+}
+@keyframes Farbwechsel {
+    0% {background-color:  rgb(255,  0,  0);}
+    5% {background-color:  rgb(255, 94,  0);}
+    15% {background-color: rgb(255, 174, 0);}
+    25% {background-color: rgb(255, 238, 0);}
+    35% {background-color: rgb(179, 255, 0);}
+    45% {background-color: rgb( 53, 253, 3);}
+    55% {background-color: rgb(0, 252, 155);}
+    65% {background-color: rgb(0, 255, 255);}
+    75% {background-color: rgb(0, 102, 255);}
+    85% {background-color: rgb(111, 0, 255);}
+    95% {background-color: rgb(247, 0, 255);} 
+    100% {background-color:rgb(255, 0,   0);}
+}
+
+@keyframes DreiPunkte {
+    0% {transform:     rotate(0deg);}
+    25% {transform: rotate(22.5deg);}
+    50% {transform:   rotate(45deg);}
+    75% {transform: rotate(67.5deg);}
+   100% {transform:   rotate(90deg);}
+}
+
+img.Eyecatcher {
+    width: 300px;
+}
+article div img {
+    width: 700px;
+    position: relative;
+    left: -200px;
+}
+span div img {
+    width: 50px;
+    position: relative;
+    left: 0px;
+    
+}
+.dropdown span div img:hover {
+    width: 50px;
+    animation: none;
+}
+.dropdown div img:hover {
+    animation-name:DreiPunkte ;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.dropdown div.dropdown-icon {
+    display: inline-block;
+    animation-name:Farbwechsel ;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    animation-name: Farbwechsel;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: aqua;
+  }
+
+  .dropdown-content a {
+    color: rgb(0, 238, 255);
+    background-color: rgb(0, 0, 0);
+  }
+  article li{
+    color: rgba(0, 0, 0, 0.445);
+    font-family: Cambria;
+    animation-name:Farbwechsel ;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
